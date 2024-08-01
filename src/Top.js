@@ -18,40 +18,60 @@ const Top = () => {
 
     const slides = [
         {
-            title: 'Beach',
-            subtitle: '€39,90',
-            content: 'In 20 years, there could be more plastic in our oceans than fish.',
+            title: 'Energy Boost',
+            subtitle: '590Kcal',
+            content: 'Feel your best this summer with our energy - boosting dishes.',
             subcontent:
-                'Plastic pollution injures more than 100.000 marine animals every year. It takes around 450 years for one plastic bottle to decompose.',
+                'Revitalize your body with meals designed to keep you cool and full of energy, perfect for overcoming summer fatigue.',
             imgBg: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=2902&auto=format&fit=crop&ixlib=rb-4',
-            img: 'https://www.designforfinland.com/product-images/Closca_Bottle_Wave_Antarctica_450ml_Close.png/2083089000004207012/1100x1100',
+            //TODO 元画像なので、一時保管→最終的には削除する
+            // img: 'https://www.designforfinland.com/product-images/Closca_Bottle_Wave_Antarctica_450ml_Close.png/2083089000004207012/1100x1100',
+            img: process.env.PUBLIC_URL + '/test1.png',
         },
         {
-            title: 'Savanna',
-            subtitle: '€19,90',
-            content: 'The Earth’s area affected by desertification is approx 11 times India’s size.',
+            title: 'Detox',
+            subtitle: '1190Kcal',
+            content: 'Feel your best this summer with our energy - boosting dishes.',
             subcontent:
                 'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
             imgBg: 'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1&auto=format&fit=crop&w=2340&q=80',
             img: 'https://fnac.sa/cdn/shop/files/Closca_Bottle_Wave_Sahara_600ml_Close.png?v=1703675684',
         },
         {
-            title: 'Glacier',
-            subtitle: '€49,90',
-            content: 'Glaciers contain 75% of the World’s freshwater.',
+            title: 'Vegan',
+            subtitle: '720Kcal',
+            content: 'Feel your best this summer with our energy - boosting dishes.',
             subcontent:
                 'The effects of melting ice glaciers are biodiversity loss, the rising of the sea level and the deficiency of freshwater, among others.',
             imgBg: 'https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg',
             img: 'https://gomagcdn.ro/domains/alty.ro/files/product/original/sticla-reutilizabila-apa-closca-glacier-copie-848-7049.png',
         },
         {
-            title: 'Coral',
-            subtitle: '€80,90',
-            content: 'We will have lost 60% of our coral reefs by 2030.',
+            title: 'High Protein',
+            subtitle: '270Kcal',
+            content: 'Feel your best this summer with our energy - boosting dishes.',
             subcontent:
                 'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
             imgBg: 'https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3260&q=80',
             img: 'https://fnac.sa/cdn/shop/files/Closca_Bottle_Wave_Arizona_600ml_Close.png?v=1703675684&width=1946',
+        },
+        {
+            title: 'Gluten Free',
+            subtitle: '1190Kcal',
+            content: 'Feel your best this summer with our energy - boosting dishes.',
+            subcontent:
+                'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
+            imgBg: 'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1&auto=format&fit=crop&w=2340&q=80',
+            img: 'https://fnac.sa/cdn/shop/files/Closca_Bottle_Wave_Sahara_600ml_Close.png?v=1703675684',
+        },
+        {
+            title: 'Quick Easy',
+            subtitle: '720Kcal',
+            content: 'Feel your best this summer with our energy - boosting dishes.',
+            subcontent:
+                'The effects of melting ice glaciers are biodiversity loss, the rising of the sea level and the deficiency of freshwater, among others.',
+            imgBg: 'https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg',
+            img: 'https://gomagcdn.ro/domains/alty.ro/files/product/original/sticla-reutilizabila-apa-closca-glacier-copie-848-7049.png',
         },
     ]
 
@@ -60,10 +80,10 @@ const Top = () => {
             <div className="header">
                 <img className="logo" src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
                 <div className="header-menu">
-                    <a href="#">Mask</a>
-                    <a href="#">Helmet</a>
-                    <a href="#">Bottle</a>
-                    <a href="#">Accessories</a>
+                    <a href="#">Search</a>
+                    <a href="#">Quiz</a>
+                    <a href="#">Add recipe</a>
+                    {/* <a href="#">Accessories</a> */}
                 </div>
                 <div className="header-icons">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -101,13 +121,12 @@ const Top = () => {
                             <div className="main">
                                 <div className="left-side">
                                     <div className="main-wrapper">
-                                        <h3 className="main-header">Closca Bottle</h3>
+                                        <h3 className="main-header">Trend menu</h3>
                                         <h1 className="main-title">{slide.title}</h1>
                                         <h2 className="main-subtitle">{slide.subtitle}</h2>
                                     </div>
                                     <div className="main-content">
                                         <div className="main-content__title">{slide.content}</div>
-                                        {/* TODO subtitle を取得してくる */}
                                         <div className="main-content__subtitle">{slide.subcontent}</div>
                                         <div className="more-menu">
                                             Shop Now
@@ -131,38 +150,6 @@ const Top = () => {
                                     <img className="bottle-bg" src={slide.imgBg} alt="" />
                                     <img className="bottle-img" src={slide.img} alt="" />
                                 </div>
-                                {/* <div className="button-wrapper">
-                                    <div className="swiper-button swiper-prev-button">
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http:www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="1.2"
-                                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <div className="swiper-button swiper-next-button">
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                            xmlns="http:www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="1.2"
-                                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                            />
-                                        </svg>
-                                    </div>
-                                </div> */}
                                 <div className="right-side">
                                     <div className="button-wrapper">
                                         <div className="swiper-button swiper-prev-button">
@@ -198,7 +185,6 @@ const Top = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* //ここに入れてみる */}
                         </SwiperSlide>
                     ))}
                 </Swiper>
