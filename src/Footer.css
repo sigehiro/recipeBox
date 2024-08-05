@@ -1,0 +1,26 @@
+.footer {
+    background-color: #6c6565;
+    color: var(--beach-bg);
+    padding: 8px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--beach-bg);
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
