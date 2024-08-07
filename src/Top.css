@@ -137,7 +137,7 @@ h3 {
 
 .center .bottle-img {
     position: absolute;
-    top: 25%;
+    top: 18%;
     left: 0;
     transform: scale(1.6);
 }
@@ -225,7 +225,8 @@ h3 {
     object-position: 60%;
 }
 .swiper-slide-active .bottle-bg {
-    opacity: 1;
+    /* Don't delete. Show original background：元背景の表示 */
+    /* opacity: 1; */
     transform: none;
     object-position: 50%;
 }
@@ -236,7 +237,7 @@ h3 {
 }
 .swiper-slide-active .bottle-img {
     opacity: 1;
-    transform: scale(1.6);
+    transform: scale(1.5);
 }
 [data-sld='1'] .container,
 [data-sld='1'] .header {
@@ -322,6 +323,9 @@ h3 {
         width: 260px;
         height: 390px;
     }
+    .center .bottle-img {
+        top: 38%;
+    }
     .right-side {
         width: 440px;
         position: initial;
@@ -335,7 +339,7 @@ h3 {
         justify-content: space-between;
         padding: 0;
         transform: translateY(-50%);
-        padding: 0 5em;
+        padding: 0 4em;
     }
     .button-wrapper .swiper-button + .swiper-button {
         margin-left: 0;
@@ -388,6 +392,11 @@ h3 {
     h2.main-subtitle {
         font-size: 1.2em;
     }
+    .button-wrapper {
+        padding: 0 20px;
+        position: absolute;
+        top: 47%;
+    }
 }
 /*----------------------------------480px以下　スマホーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media (max-width: 480px) {
@@ -406,6 +415,6 @@ h3 {
     .button-wrapper {
         padding: 0 20px;
         position: absolute;
-        top: 50%;
+        top: 47%;
     }
 }

@@ -29,7 +29,7 @@ const Top = () => {
             imgBg: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=2902&auto=format&fit=crop&ixlib=rb-4',
             //TODO 元画像なので、一時保管→最終的には削除する
             // img: 'https://www.designforfinland.com/product-images/Closca_Bottle_Wave_Antarctica_450ml_Close.png/2083089000004207012/1100x1100',
-            img: process.env.PUBLIC_URL + '/test1.png',
+            img: process.env.PUBLIC_URL + '/summer-energy-boost.jpg',
         },
         {
             title: 'Detox',
@@ -38,7 +38,7 @@ const Top = () => {
             subcontent:
                 'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
             imgBg: 'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1&auto=format&fit=crop&w=2340&q=80',
-            img: 'https://fnac.sa/cdn/shop/files/Closca_Bottle_Wave_Sahara_600ml_Close.png?v=1703675684',
+            img: process.env.PUBLIC_URL + '/detox.jpg',
         },
         {
             title: 'Vegan',
@@ -47,7 +47,7 @@ const Top = () => {
             subcontent:
                 'The effects of melting ice glaciers are biodiversity loss, the rising of the sea level and the deficiency of freshwater, among others.',
             imgBg: 'https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg',
-            img: 'https://gomagcdn.ro/domains/alty.ro/files/product/original/sticla-reutilizabila-apa-closca-glacier-copie-848-7049.png',
+            img: process.env.PUBLIC_URL + '/vegan.jpg',
         },
         {
             title: 'High Protein',
@@ -56,7 +56,7 @@ const Top = () => {
             subcontent:
                 'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
             imgBg: 'https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3260&q=80',
-            img: 'https://fnac.sa/cdn/shop/files/Closca_Bottle_Wave_Arizona_600ml_Close.png?v=1703675684&width=1946',
+            img: process.env.PUBLIC_URL + '/protein.jpg',
         },
         {
             title: 'Gluten Free',
@@ -65,7 +65,7 @@ const Top = () => {
             subcontent:
                 'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
             imgBg: 'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1&auto=format&fit=crop&w=2340&q=80',
-            img: 'https://fnac.sa/cdn/shop/files/Closca_Bottle_Wave_Sahara_600ml_Close.png?v=1703675684',
+            img: process.env.PUBLIC_URL + '/glten-free.jpg',
         },
         {
             title: 'Quick Easy',
@@ -74,7 +74,7 @@ const Top = () => {
             subcontent:
                 'The effects of melting ice glaciers are biodiversity loss, the rising of the sea level and the deficiency of freshwater, among others.',
             imgBg: 'https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg',
-            img: 'https://gomagcdn.ro/domains/alty.ro/files/product/original/sticla-reutilizabila-apa-closca-glacier-copie-848-7049.png',
+            img: process.env.PUBLIC_URL + '/quick-food.jpg',
         },
     ]
 
