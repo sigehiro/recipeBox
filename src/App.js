@@ -1,15 +1,22 @@
-import logo from './logo.svg'
-import './App.css'
-import Top from './Top'
-import Footer from './Footer'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Top from './Top';
+import Footer from './Footer';
+import RecipeSearch from './RecipeSearch';
 
 function App() {
     return (
-        <div className="App">
-            <Top />
-            <Footer />
-        </div>
-    )
+        <Router>
+            <div className="App">
+                <Top />
+                <Routes>
+                    <Route path="/recipe-search" element={<RecipeSearch />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;
