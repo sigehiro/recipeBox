@@ -17,3 +17,7 @@ develop (latest)
 
 - [Recipe Search page](https://github.com/user-attachments/assets/cfa8c621-4acc-480b-8e16-ca58f688893d)
 
+- [Quiz Page](https://github.com/user-attachments/assets/fe9d8402-2765-442f-9be1-f75f0647595b)
+- [Results Page (1/6)](https://github.com/user-attachments/assets/6cc466b4-7c48-4b8c-817c-236b4a424128)
+
+
