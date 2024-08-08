@@ -1,15 +1,15 @@
-import React from 'react'
-import './Header.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = ({ isMenuOpen, toggleMenu }) => {
     return (
         <div className="header">
             <img className="logo" src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
             <div className="header-menu">
-                <a href="#">Search</a>
+                <Link to="/recipe-search">Search</Link>
                 <a href="#">Quiz</a>
                 <a href="#">Add recipe</a>
-                {/* <a href="#">Accessories</a> */}
             </div>
             <div className="header-icons">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +33,7 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
                 </svg>
             </div>
         </div>
-    )
-}
-export default Header
+    );
+};
+
+export default Header;
