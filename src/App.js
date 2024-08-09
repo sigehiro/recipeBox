@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Quiz from './Quiz';
 import Result from './Result';
+import Top from './Top';
+import Footer from './Footer';
 import './App.css';
 
 const App = () => {
@@ -24,10 +26,12 @@ const App = () => {
 
   return (
     <div className="App">
+      <Top />
       <Routes>
         <Route path="/tasteprofilequiz" element={<Quiz onAnswer={handleAnswer} />} />
         <Route path="/tasteprofilequiz/results" element={<Result answers={answers} />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
