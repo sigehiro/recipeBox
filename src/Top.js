@@ -91,7 +91,7 @@ const Top = () => {
             {isMenuOpen && (
                 <div className="mobile-menu">
                     <a href="#">Search</a>
-                    <a href="/tasteprofilequiz">Quiz</a>
+                    <a href="#">Quiz</a>
                     <a href="#">Add recipe</a>
                     {/* 他のメニュー項目を追加 */}
                     <button onClick={toggleMenu}>Close</button>
@@ -189,8 +189,4 @@ const Top = () => {
     )
 }
 
-
-
-
 export default Top
-

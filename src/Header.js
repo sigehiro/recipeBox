@@ -7,7 +7,7 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
             <img className="logo" src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
             <div className="header-menu">
                 <a href="#">Search</a>
-                <a href="/tasteprofilequiz">Quiz</a>
+                <a href="#">Quiz</a>
                 <a href="#">Add recipe</a>
                 {/* <a href="#">Accessories</a> */}
             </div>
@@ -35,8 +35,4 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
         </div>
     )
 }
-
-
-
 export default Header
-
