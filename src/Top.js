@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Top.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Link } from 'react-router-dom';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 import Header from './Header'
@@ -94,6 +93,7 @@ const Top = () => {
                     <a href="#">Search</a>
                     <a href="/tasteprofilequiz">Quiz</a>
                     <a href="#">Add recipe</a>
+                    {/* 他のメニュー項目を追加 */}
                     <button onClick={toggleMenu}>Close</button>
                 </div>
             )}
@@ -189,4 +189,8 @@ const Top = () => {
     )
 }
 
+
+
+
 export default Top
+

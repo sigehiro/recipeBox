@@ -10,6 +10,7 @@ const App = () => {
   const [answers, setAnswers] = useState([]);
   const navigate = useNavigate();
 
+
   // Function to handle when an answer is selected
   const handleAnswer = (answer) => {
     const newAnswers = [...answers, answer];
