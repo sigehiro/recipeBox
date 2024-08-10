@@ -6,8 +6,6 @@ import 'swiper/swiper-bundle.css'
 import Header from './Header'
 
 const Top = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-
     useEffect(() => {
         const swiperInstance = document.querySelector('.mySwiper')?.swiper
 
@@ -78,25 +76,10 @@ const Top = () => {
         },
     ]
 
-    //Humbergar toggle Menu
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
-
     return (
         <div className="container">
             {/* call Header.js */}
-            <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-
-            {isMenuOpen && (
-                <div className="mobile-menu">
-                    <a href="#">Search</a>
-                    <a href="#">Quiz</a>
-                    <a href="#">Add recipe</a>
-                    {/* 他のメニュー項目を追加 */}
-                    <button onClick={toggleMenu}>Close</button>
-                </div>
-            )}
+            {/* <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} /> */}
 
             <div>
                 <Swiper
