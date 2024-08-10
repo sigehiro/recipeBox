@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Top.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Link } from 'react-router-dom';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 import Header from './Header'
