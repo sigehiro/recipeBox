@@ -93,6 +93,7 @@ const Top = () => {
                     <a href="#">Search</a>
                     <a href="/tasteprofilequiz">Quiz</a>
                     <a href="#">Add recipe</a>
+                    {/* 他のメニュー項目を追加 */}
                     <button onClick={toggleMenu}>Close</button>
                 </div>
             )}
@@ -188,4 +189,8 @@ const Top = () => {
     )
 }
 
+
+
+
 export default Top
+
