@@ -21,7 +21,7 @@ const RecipeForm = ({ onSubmit }) => {
   return (
     <form className="recipe-form" onSubmit={handleSubmit}>
       <div className="form-group">
-        <label htmlFor="recipeName">Recipe Name/レシピ名:</label>
+        <label htmlFor="recipeName">Recipe Name: </label>
         <input
           type="text"
           className="form-control"
