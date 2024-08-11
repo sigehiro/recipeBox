@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
-const Header = ({ isMenuOpen, toggleMenu }) => {
+const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    //Close&Open toggle menu
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
     return (
         <div className="header">
-            <img className="logo" src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+            <Link to="/" className="logo">
+                <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+            </Link>
             <div className="header-menu">
-                <a href="#">Search</a>
-                <a href="#">Quiz</a>
-                <a href="#">Add recipe</a>
-                {/* <a href="#">Accessories</a> */}
+                <Link to="/recipe-search">Search</Link>
+                <Link to="/quiz">Quiz</Link>
+                <Link to="/add-recipe">Add recipe</Link>
             </div>
             <div className="header-icons">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +41,18 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
                     <path d="M3 6h18M3 12h18M3 18h18" strokeWidth="2" />
                 </svg>
             </div>
+            {isMenuOpen && (
+                <div className="mobile-menu">
+                    {/* <Link to="/">Home</Link> */}
+                    <Link to="/recipe-search">Search</Link>
+                    <Link to="/quiz">Quiz</Link>
+                    <Link to="/add-recipe">Add recipe</Link>
+                    {/* 他のメニュー項目を追加 */}
+                    <button onClick={toggleMenu}>Close</button>
+                </div>
+            )}
         </div>
     )
 }
+
 export default Header
