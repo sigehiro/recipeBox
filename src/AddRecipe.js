@@ -1,6 +1,3 @@
-
-//AddRecipe.js
-
 import React, { useState } from 'react';
 import RecipeForm from './RecipeForm';
 import 'bootstrap/dist/css/bootstrap.min.css';

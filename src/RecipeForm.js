@@ -56,4 +56,5 @@ const RecipeForm = ({ onSubmit }) => {
     </form>
   );
 };
+
 export default RecipeForm;
