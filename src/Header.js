@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
             <div className="header-menu">
                 <Link to="/recipe-search">Search</Link>
-                <Link to="/quiz">Quiz</Link>
+                <Link to="/tasteprofilequiz">Quiz</Link>
                 <Link to="/add-recipe">Add recipe</Link>
             </div>
             <div className="header-icons">
