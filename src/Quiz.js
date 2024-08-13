@@ -1,6 +1,7 @@
 // src/Quiz.js
 import React from 'react';
 import Question from './Question';
+import './Quiz.css';
 
 const questions = [
   {

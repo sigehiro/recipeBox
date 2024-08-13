@@ -50,7 +50,7 @@ const Header = () => {
                 <div className="mobile-menu">
                     {/* <Link to="/">Home</Link> */}
                     <Link to="/recipe-search">Search</Link>
-                    <Link to="/quiz">Quiz</Link>
+                    <Link to="/tasteprofilequiz">Quiz</Link>
                     <Link to="/add-recipe">Add recipe</Link>
                     {/* 他のメニュー項目を追加 */}
                     <button onClick={toggleMenu}>Close</button>

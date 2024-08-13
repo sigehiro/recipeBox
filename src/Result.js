@@ -132,7 +132,7 @@ const Result = ({ answers }) => {
   const { text, image } = getSummary(result);
 
   return (
-    <div>
+    <div className='container'>
       <h2>Your Taste Profile</h2>
       <img src={image} alt="Taste Profile" className="result-image" />
       <div>{text}</div>
