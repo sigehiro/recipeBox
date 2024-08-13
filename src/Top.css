@@ -6,6 +6,8 @@
     --beach-bg: #e7dfcf;
     --glacier-bg: #b6d6c8;
     --coral-bg: #e86357;
+    --forest-bg: #eef5d0;
+    --sunset-bg: #e3c3c1;
     --arrow-fill: #333231;
     --body-font: 'Montserrat', sans-serif;
     --italic-font: 'EB Garamond', serif;
@@ -16,6 +18,7 @@
 }
 img {
     max-width: 100%;
+    width: 260px;
 }
 a {
     text-decoration: none;
@@ -99,7 +102,7 @@ h3 {
 .main-content__subtitle {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: -0.01em;
     transition-delay: 0.3s;
 }
@@ -251,6 +254,14 @@ h3 {
 [data-sld='3'] .header {
     background-color: var(--coral-bg);
 }
+[data-sld='4'] .container,
+[data-sld='4'] .header {
+    background-color: var(--forest-bg);
+}
+[data-sld='5'] .container,
+[data-sld='5'] .header {
+    background-color: var(--sunset-bg);
+}
 
 /* Humbergar toggle menu*/
 .mobile-menu {
@@ -332,7 +343,7 @@ h3 {
     }
     .button-wrapper {
         position: absolute;
-        top: 30%; /* Center vertically */
+        top: 35%; /* allow Center vertically */
         left: 0;
         width: 100%;
         display: flex;
@@ -395,7 +406,7 @@ h3 {
     .button-wrapper {
         padding: 0 20px;
         position: absolute;
-        top: 47%;
+        top: 53%;
     }
 }
 /*----------------------------------480px以下　スマホーーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -415,6 +426,6 @@ h3 {
     .button-wrapper {
         padding: 0 20px;
         position: absolute;
-        top: 47%;
+        top: 53%;
     }
 }

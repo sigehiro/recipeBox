@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, EffectFade } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 import Header from './Header'
+import { Link } from 'react-router-dom'
 
 const Top = () => {
     useEffect(() => {
@@ -108,7 +109,9 @@ const Top = () => {
                                         <div className="main-content__title">{slide.content}</div>
                                         <div className="main-content__subtitle">{slide.subcontent}</div>
                                         <div className="more-menu">
-                                            Shop Now
+                                            <Link to="/recipe-search">
+                                                <b>Show now</b>
+                                            </Link>
                                             <svg
                                                 fill="none"
                                                 stroke="currentColor"
