@@ -6,6 +6,8 @@
     --beach-bg: #e7dfcf;
     --glacier-bg: #b6d6c8;
     --coral-bg: #e86357;
+    --forest-bg: #eef5d0;
+    --sunset-bg: #e3c3c1;
     --arrow-fill: #333231;
     --body-font: 'Montserrat', sans-serif;
     --italic-font: 'EB Garamond', serif;
@@ -251,6 +253,14 @@ h3 {
 [data-sld='3'] .container,
 [data-sld='3'] .header {
     background-color: var(--coral-bg);
+}
+[data-sld='4'] .container,
+[data-sld='4'] .header {
+    background-color: var(--forest-bg);
+}
+[data-sld='5'] .container,
+[data-sld='5'] .header {
+    background-color: var(--sunset-bg);
 }
 
 /* Humbergar toggle menu*/

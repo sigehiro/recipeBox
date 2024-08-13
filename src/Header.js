@@ -1,14 +1,19 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const location = useLocation()
 
     //Close&Open toggle menu
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
+
+    useEffect(() => {
+        document.body.removeAttribute('data-sld')
+    }, [location])
 
     return (
         <div className="header">
