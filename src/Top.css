@@ -62,7 +62,8 @@ h3 {
     position: relative;
 }
 .main {
-    /* height: 100vh; 追加 */
+    /* 追加 */
+    height: 100vh;
     padding: 42px 25px 30px;
     display: flex;
     flex-grow: 1;
