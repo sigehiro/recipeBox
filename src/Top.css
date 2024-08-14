@@ -357,6 +357,14 @@ h3 {
         margin-left: 0;
     }
 }
+
+/* Bootstrapの影響 */
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 100%;
+    }
+}
 /*----------------------------------575px以下　タブレット・スマホーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (max-width: 575px) {
     .center .bottle-bg {

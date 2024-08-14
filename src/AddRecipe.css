@@ -1,0 +1,19 @@
+.customContainer {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.form-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.submit-button {
+    background-color: #007bff;
+}
