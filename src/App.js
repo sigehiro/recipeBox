@@ -7,6 +7,7 @@ import Footer from './Footer'
 import RecipeSearch from './RecipeSearch'
 import Quiz from './Quiz';
 import Result from './Result';
+import AddRecipe from './AddRecipe';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function AppRoutes() {
       <Route path="/recipe-search" element={<RecipeSearch />} />
       <Route path="/tasteprofilequiz" element={<Quiz onAnswer={handleAnswer} />} />
       <Route path="/tasteprofilequiz/results" element={<Result answers={answers} />} />
+      <Route path="/add-recipe" element={<AddRecipe />} />
     </Routes>
   );
 }
