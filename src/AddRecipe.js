@@ -67,6 +67,8 @@ const AddRecipe = () => {
       setInstructions('');
       setCalories('');
       setPicture(null);
+      // Alert the user of a successful submission
+      alert('Recipe submitted successfully!');
     }
   };
 
