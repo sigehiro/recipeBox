@@ -22,56 +22,51 @@ const Top = () => {
         {
             title: 'Energy Boost',
             subtitle: '590Kcal',
-            content: 'Feel your best this summer with our energy - boosting dishes.',
-            subcontent:
-                'Revitalize your body with meals designed to keep you cool and full of energy, perfect for overcoming summer fatigue.',
+            content: 'Energize your summer with our refreshing and nutritious dishes that keep you active.',
+            subcontent: 'Stay vibrant and full of vitality with meals designed to combat summer fatigue and heat.',
             imgBg: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=2902&auto=format&fit=crop&ixlib=rb-4',
-            //TODO 元画像なので、一時保管→最終的には削除する
-            // img: 'https://www.designforfinland.com/product-images/Closca_Bottle_Wave_Antarctica_450ml_Close.png/2083089000004207012/1100x1100',
             img: process.env.PUBLIC_URL + '/summer-energy-boost.jpg',
         },
         {
             title: 'Detox',
             subtitle: '1190Kcal',
-            content: 'Feel your best this summer with our energy - boosting dishes.',
-            subcontent:
-                'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
+            content: 'Cleanse your body with our detox-friendly meals that promote wellness and vitality.',
+            subcontent: 'These nourishing dishes help eliminate toxins and rejuvenate your system for a fresh start.',
             imgBg: 'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1&auto=format&fit=crop&w=2340&q=80',
             img: process.env.PUBLIC_URL + '/detox.jpg',
         },
         {
             title: 'Vegan',
-            subtitle: '720Kcal',
-            content: 'Feel your best this summer with our energy - boosting dishes.',
+            subtitle: '520Kcal',
+            content: 'Enjoy a delicious array of plant-based meals that are both satisfying and nutritious.',
             subcontent:
-                'The effects of melting ice glaciers are biodiversity loss, the rising of the sea level and the deficiency of freshwater, among others.',
+                'Our vegan options are crafted to provide essential nutrients while keeping your meals light and fresh.',
             imgBg: 'https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg',
             img: process.env.PUBLIC_URL + '/vegan.jpg',
         },
         {
             title: 'High Protein',
             subtitle: '270Kcal',
-            content: 'Feel your best this summer with our energy - boosting dishes.',
+            content: 'Fuel your day with high-protein meals that support muscle growth and recovery.',
             subcontent:
-                'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
+                'These dishes are perfect for anyone looking to boost their protein intake while enjoying great flavors.',
             imgBg: 'https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3260&q=80',
             img: process.env.PUBLIC_URL + '/protein.jpg',
         },
         {
             title: 'Gluten Free',
-            subtitle: '1190Kcal',
-            content: 'Feel your best this summer with our energy - boosting dishes.',
-            subcontent:
-                'Coral reefs are essential to humans, as they protect the shorelines and are a source of nutrients and habitat for thousands of marine species.',
+            subtitle: '360Kcal',
+            content: 'Savor gluten-free dishes that are both tasty and satisfying for all dietary needs.',
+            subcontent: 'Our gluten-free options are crafted with care to ensure you enjoy every bite without worry.',
             imgBg: 'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1&auto=format&fit=crop&w=2340&q=80',
             img: process.env.PUBLIC_URL + '/glten-free.jpg',
         },
         {
             title: 'Quick Easy',
             subtitle: '720Kcal',
-            content: 'Feel your best this summer with our energy - boosting dishes.',
+            content: 'Experience the convenience of quick, easy meals that don’t compromise on flavor or nutrition.',
             subcontent:
-                'The effects of melting ice glaciers are biodiversity loss, the rising of the sea level and the deficiency of freshwater, among others.',
+                'Perfect for busy days, our quick dishes offer healthy options that can be prepared in no time.',
             imgBg: 'https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg',
             img: process.env.PUBLIC_URL + '/quick-food.jpg',
         },
@@ -110,7 +105,7 @@ const Top = () => {
                                         <div className="main-content__subtitle">{slide.subcontent}</div>
                                         <div className="more-menu">
                                             <Link to="/recipe-search">
-                                                <b>Show now</b>
+                                                <b>Explore Recipes</b>
                                             </Link>
                                             <svg
                                                 fill="none"
