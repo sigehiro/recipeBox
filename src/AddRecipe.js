@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import RecipeForm from './RecipeForm';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App'; // Import custom styles
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './AddRecipeCSS.css'; // Import custom styles
 
 const AddRecipe = () => {
 
