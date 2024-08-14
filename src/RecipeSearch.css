@@ -1,6 +1,6 @@
 .recipe-search {
     padding: 40px;
-    background-color: #f5f5f5;
+    background-color: var(--beach-bg); /* Use the --beach-bg color */
     font-family: 'Roboto', sans-serif;
 }
 
