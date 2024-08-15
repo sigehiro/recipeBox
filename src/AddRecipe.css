@@ -17,3 +17,42 @@
 .submit-button {
     background-color: #007bff;
 }
+.submitted-recipe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-image {
+    max-width: 300px;
+    border-radius: 4px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.ingredients-text,
+.instructions-text {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.submitted-recipes {
+    margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+    .recipe-image {
+        max-width: 200px;
+    }
+}

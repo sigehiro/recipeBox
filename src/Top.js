@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './Top.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, EffectFade } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
-import Header from './Header'
 import { Link } from 'react-router-dom'
 
 const Top = () => {
@@ -74,9 +73,6 @@ const Top = () => {
 
     return (
         <div className="container">
-            {/* call Header.js */}
-            {/* <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} /> */}
-
             <div>
                 <Swiper
                     className="mySwiper"
